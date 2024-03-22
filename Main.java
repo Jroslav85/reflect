@@ -44,12 +44,7 @@ public class Main {
 						for (Class<?> parameterType : constructor.getParameterTypes()) {
 							String nameClass = parameterType.getName()
 									.substring(packageName.length() + 1);
-						//	System.out.println(nameClass);
 							for (Object entryObject : innerSet) {
-//								System.out.println(
-//										entryObject.getClass().getName()
-//												.substring(packageName.length() + 1)
-//								);
 								if (entryObject.getClass().getName()
 										.substring(packageName.length() + 1).equals(nameClass)) {
 									parameters[i] = entryObject;
